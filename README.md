@@ -9,3 +9,5 @@ A user can initialize a Private Message with another user at any point when they
 
 Styling and Scrolling:
 We used a lot of custom styling to improve the usability and intuitive nature of out chat app. The private message div, chat room div, and available rooms div all incorporate the scrolling function so that when the chats fill up with messages, the messages remain contained in the div, and the div gains the ability to scroll.  
+
+This project was completed as part of Wash U's Rapid Prototype Development and Creative Programming course in collaboration with Tyler Reeves.
