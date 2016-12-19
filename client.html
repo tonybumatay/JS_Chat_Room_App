@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+   <head>
+   <title>Chat City</title>
+      <script src="/socket.io/socket.io.js"></script>
+      <link href="bootstrap.min.css" rel="stylesheet">
+      <link href="chatroom.css" rel="stylesheet">
+   </head>
+   <body>
+   <ul class="pages"> 
+   <li class="login-page site">
+      <div class="sign-in">
+        <h3 class="username-header">Choose a Username</h3>
+        <input class="usernameVal" id = "usernameInput" type="text" maxlength="20"/>
+      </div>
+   </li>
+   <li id = "chat-page" class="chat-page site">
+      <h1>Chat City</h1>
+      <h3 id="usernameHeader"></h3>
+         <div id="chatlog">
+           <ul id="roomThread" class="message-thread">
+
+            </ul>
+         </div><br>
+         <div class="roomslist">
+         <button  type="button" id="create-room-modal" class="btn btn-primary btn-md" data-toggle="modal" data-target=".createRoom">Create Room</button><br>
+    <!-- Small modal -->
+               <div class="modal fade createRoom" id="createModal" tabindex="-1" role="dialog"  aria-hidden="true">
+                 <div class="modal-dialog modal-sm">
+                   <div class="modal-content">
+                        <h3 class="modalHeader">Create Room</h3>
+                        <h4>Room Name</h4>
+                        <p id = "takenPrompt"></p>
+                        <input type="text" id="createRoomName" name="rooomName"  required>
+                        <h4>Password</h4>
+                        <p>Don't enter anything if you dont want a password</p>
+                        <input type="password" id="createRoomPass" name="password" >
+                        <br>
+                        <button id="create-room-btn" type="submit" value="Submit" class="btn btn-primary btn-lg">Create Room</button>
+                   </div>
+                 </div>
+               </div>
+            <h3>Available Rooms</h3>
+            <div id="roomlist">
+               <button  type="button" id="public-room-btn0" value = "public1" class="btn btn-primary btn-md room-btn" >public1</button><br>
+               <ul id = "public-room-ULpublic1"></ul>
+               <button  type="button" id="public-room-btn1" value = "public2" class="btn btn-primary btn-md room-btn" >public2</button><br>
+               <ul id = "public-room-ULpublic2"></ul>
+            </div>
+         </div>
+         <div class="reply"> 
+            <input id = "room_message_input" class="messageInput" placeholder="Speak your mind"/>
+            <button id="send-btn" class="btn btn-primary btn-md" onclick="sendMessage()">send</button>
+         </div>
+         <div  id="outer-private-msgs">
+            <h3>Private Messages</h3>
+            <div id="private-msgs">
+               <ul class="nav nav-tabs">
+                   <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Show Convo<span class="caret"></span></a>
+                      <ul id ="dropdown-show" class="dropdown-menu" role="menu">
+                      </ul>
+                  </li>
+                  <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Hide Convo<span class="caret"></span></a>
+                      <ul id ="dropdown-hide" class="dropdown-menu" role="menu">
+                      </ul>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </li>
+      </ul>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <script src="functions.js"></script>
+   </body>
+</html>

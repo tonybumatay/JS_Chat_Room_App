@@ -1,0 +1,238 @@
+/*CUSTOM STYLES*/
+body {
+	font-family: 'Crimson Text', serif;
+	text-align: center;
+}
+h1{
+	 padding-top: 20px;
+}
+#login-btn, #createAccount-btn{
+	padding: 5px 50px;
+	margin: 5px;
+}
+#logout-btn{
+	visibility: hidden;
+}
+
+.modalHeader{
+	border-bottom: 1px solid black;
+	margin: 0px 30px;
+	padding: 5px;
+}
+.top-btn{
+	position: relative;
+	left: -27%;
+	width: 150px;
+	margin-top: 10px;
+	font-size: 18px;
+	padding: 3px 0px;
+}
+#chatlog{
+	border-radius:15px;
+	border: 2px solid #A12E33;
+	background-color:#E3E3E3;
+	width:50%;
+	margin-left:25%;
+}
+#roomlist{
+	border-radius:15px;
+	border: 2px solid #A12E33;
+	background-color:#E3E3E3;
+	overflow-y: scroll;
+	height:500px;
+}
+#roomThread{
+	height:400px;
+}
+ #outer-private-msgs{
+ 	height:300px;
+	width: 21%;
+ 	margin-left: 1%;
+ 	position:relative;
+	 top: -565px;
+ }
+#private-msgs{
+	height:352px;
+  	border-radius:15px;
+	border: 2px solid #A12E33;
+	background-color:#E3E3E3;
+	
+}
+#private-msgs li{
+	border-radius:25px;
+	margin-left:5px;
+}
+
+.nav>li>a {
+  position: relative;
+  display: block;
+  padding: 2px 5px;
+  }
+#private-msgs a{
+	color:#A12E33;
+}
+
+.roomates{
+	list-style:none;
+	position:relative;
+	left:-15px;
+}
+.nameHeader{
+	color:#A12E33;
+	margin-top:2px;
+}
+.chat-block{
+	height:300px;
+	width: 21%;
+  	margin-left: 1%;
+  	margin-bottom:60px;
+  	border-radius:15px;
+	border: 2px solid #A12E33;
+	background-color:#E3E3E3;
+	position:relative;
+	top: -777px;
+	display: none;
+}
+
+#private-msgs a:focus {
+	background-color: #A12E33;
+	color:#F5F5F5;
+	display: none;
+}
+.messageInput {
+  border: 3px solid #A12E33;
+  height: 40px;
+  width: 45%;
+  font-size:20px;
+}
+.message-thread{
+		list-style: none;
+		height: 400px;
+		margin-left: -40px;
+		overflow-y: scroll;
+}
+.pages{
+	list-style:none;
+	height: 100%;
+	width: 100%;
+  	margin: 0px;
+  	padding: 0px;
+}
+.page {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.received-messages{
+	margin:5px;
+	border-radius:15px;
+	border: 2px solid #A12E33;
+	background-color: #F5F5F5;
+	width:60%;
+	color:#A12E33;
+	overflow-wrap: break-word;
+}
+.sent-messages{
+	margin:5px;
+	margin-left:39%;
+	border-radius:15px;
+	background-color: #A12E33;
+	border: 2px solid #A12E33;
+	width:60%;
+	color:#F5F5F5;
+	overflow-wrap: break-word;
+}
+#message_input{
+	width:300px;
+}
+=
+.roomslist{
+	position:relative;
+  	top: -533px;
+	margin-left:78%;
+	width:20%;
+}
+.reply{
+	margin-top: -576px;
+  	position: relative;
+  	top: -50px;
+}
+.btn{
+	border: 0px;
+	background-color:#A12E33;
+	margin: 10px 0px;
+}
+.btn:hover{
+	background-color:#78060B;
+}
+.btn:visited{
+	border: 0px;
+	background-color:#A12E33;
+}
+.room-btn{
+	margin-bottom:0px;
+}
+.actions-btn {
+  background-color: #661111;
+  color: #E3E3E3;
+  margin: 1px 1px;
+  width: 78px;
+  padding: 5px 5px;
+}
+.actions-btn:hover{
+  color: #E3E3E3;
+}
+.h4Name {
+  margin-bottom: -20px;
+  margin-top: 5px;
+}
+
+/*More CSS*/
+/* Login page */
+html{
+	 background-color: #A12E33;
+}
+.login-page {
+  background-color: #A12E33;
+}
+
+.login-page.site .sign-in {
+  height: 100px;
+  margin-top: -100px;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+
+.login-page.site .sign-in .usernameVal {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  padding-bottom: 15px;
+  text-align: center;
+  width: 400px;
+}
+
+.login-page.site .username-header {
+  font-size: 200%;
+}
+
+.login-page.site .usernameVal {
+  font-size: 200%;
+  letter-spacing: 3px;
+}
+
+.login-page.site .username-header, .login-page.site .usernameVal {
+  color: #fff;
+  font-weight: 100;
+}
+/* Chat page */
+.chat-page.site {
+  display: none;
+}
+
+.reply-private {
+	margin-top: -140px;
+}
